@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guest</title>
+<link href="Ass1.css" rel="stylesheet">
+<link href="Guest.css" rel="stylesheet">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'easeInCubic', dismissible: true, display: 'push', position: 'left'});
+});
+</script>
+</head>
+<body>
+<div id="Layer1" style="position:relative;text-align:center;margin:0px 0px 0px 0px;width:100%;height:979px;float:left;clear:left;display:block;z-index:20;">
+<div id="Layer1_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Image1" style="position:absolute;left:11px;top:20px;width:168px;height:151px;z-index:6;">
+<img src="images/q.jpg" id="Image1" alt=""></div>
+<div id="wb_Text1" style="position:absolute;left:190px;top:20px;width:780px;height:151px;z-index:7;text-align:left;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Assg.1: CSS, JavaScript, and Forms<br><br></strong>Brought to you by Gilbert Al-Indary</span></div>
+<div id="wb_Text3" style="position:absolute;left:198px;top:910px;width:772px;height:50px;z-index:8;text-align:left;">
+<span style="color:#FFFFFF;font-family:'Courier New';font-size:48px;">CSC 443, Assg 1, Fall 2015</span></div>
+<div id="Layer2" style="position:absolute;text-align:left;left:0px;top:0px;width:962px;height:180px;z-index:9;">
+</div>
+<div id="wb_Form1" style="position:absolute;left:320px;top:370px;width:430px;height:290px;z-index:10;">
+<form name="Form" method="post" action="" enctype="text/plain" id="Form1">
+<div id="wb_Text2" style="position:absolute;left:20px;top:30px;width:61px;height:16px;z-index:0;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Name</span></div>
+<input type="text" id="Editbox1" style="position:absolute;left:106px;top:25px;width:198px;height:23px;line-height:23px;z-index:1;" name="Editbox1" value="" required pattern="[A-Za-zÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ \t\r\n\f0-9-]*$">
+<div id="wb_Text4" style="position:absolute;left:20px;top:80px;width:61px;height:16px;z-index:2;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Comment</span></div>
+<input type="reset" id="Button2" name="" value="Reset" style="position:absolute;left:10px;top:265px;width:96px;height:25px;z-index:3;">
+<input type="submit" id="Button1" name="" value="Submit" style="position:absolute;left:334px;top:265px;width:96px;height:25px;z-index:4;">
+<textarea name="TextArea1" id="TextArea1" style="position:absolute;left:106px;top:80px;width:198px;height:158px;z-index:5;" rows="8" cols="30" required></textarea>
+</form>
+</div>
+<div id="Layer3" style="position:absolute;text-align:left;left:0px;top:188px;width:190px;height:781px;z-index:11;">
+</div>
+<select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:50px;top:340px;width:100px;height:26px;z-index:12;">
+<option value="Courses">Courses</option>
+<option>CP3</option>
+<option>CP3</option>
+<option>CP1</option>
+<option>WEB</option>
+<option>DB</option>
+<option>Prallel Programing</option>
+<option>OS</option>
+<option>CO</option>
+<option>NET</option>
+</select>
+<div id="wb_PanelMenu1" style="position:absolute;left:50px;top:240px;width:98px;height:48px;text-align:center;z-index:13;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">Menu</a>
+<div id="PanelMenu1_markup">
+<ul>
+   <li><a href="./index.html" title="Home">Home</a></li>
+   <li><a href="./About.html" title="About">About</a></li>
+   <li><a href="./Guest.html" title="Guest" class="active">Guest</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
