@@ -16,18 +16,122 @@ $(document).ready(function()
    $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'easeInCubic', dismissible: true, display: 'push', position: 'left'});
 });
 </script>
+
+
+
+<script>
+function red() 
+{
+
+document.body.style.backgroundColor = "red";
+return true;
+}
+
+
+function yellow() 
+{
+
+document.body.style.backgroundColor="yellow";
+return true;
+}
+
+
+function green() 
+{
+
+document.body.style.backgroundColor="green";
+return true;
+}
+
+
+function black() 
+{
+
+document.body.style.backgroundColor="black";
+return true;
+}
+
+
+function silver() 
+{
+
+document.body.style.backgroundColor="silver";
+return true;
+}
+
+
+
+
+function Click1() 
+{
+
+var rand=Math.floor(Math.random() * 6) + 1;
+
+if(rand==1)
+{
+
+
+  
+location.href = 'http://slashdot.org/';
+return true;
+}if(rand==2)
+{
+
+location.href = 'http://www.thinkgeek.com/';
+  
+return true;
+}if(rand==3)
+{
+
+location.href = 'http://despair.com/';
+  
+return true;
+}if(rand==4)
+{
+
+
+location.href = 'http://www.redbubble.com/';
+
+return true;
+}if(rand==5)
+{
+
+location.href = 'http://googleresearch.blogspot.com/';
+ 
+return true;
+}if(rand==6)
+{
+
+
+location.href= 'https://developers.google.com/speed/libraries/';
+
+return true;
+}
+}
+
+
+
+</script>
 </head>
 <body>
 <div id="Layer1" style="position:relative;text-align:center;margin:0px 0px 0px 0px;width:100%;height:985px;float:left;clear:left;display:block;z-index:18;">
 <div id="Layer1_Container" style="width:978px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Image1" style="position:absolute;left:11px;top:20px;width:168px;height:151px;z-index:5;">
-<img src="images/q.jpg" id="Image1" alt=""></div>
-<div id="wb_Text1" style="position:absolute;left:190px;top:20px;width:780px;height:151px;z-index:6;text-align:left;">
+<div id="wb_Image1" style="position:absolute;left:0px;top:20px;width:168px;height:151px;z-index:5;">
+<img  onmouseover="alert('Shou bek 3am thawver? WLeeee');return true;" src="images/q.jpg" id="Image1" alt="" style="border: 4px #000000 solid;"></div>
+<div id="wb_Text1" style="position:absolute;left:172px;top:20px;width:780px;height:151px;z-index:6;text-align:left;border: 4px #000000 solid;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Assg.2: CSS, JavaScript, and Forms<br><br></strong>Brought to you by Gilbert Al-Indary</span></div>
-<div id="wb_Text2" style="position:absolute;left:350px;top:330px;height:68px;z-index:7;text-align:left;">
-<span style="color:#FFFFFF;font-family:'Courier New';font-size:40px;">Welcome to may assignment 2 page.<br></span></div>
-<div id="Layer2" style="position:absolute;text-align:left;left:0px;top:0px;width:970px;height:180px;z-index:8;">
+<div id="wb_Text2" style="position:absolute;left:200px;width: 78%;top: 185px;;height:68px;z-index:7;text-align:left;">
+
+<button style="background: red;margin:10px"type="button" onclick="red()">red</button>
+<button style="background: yellow;margin:10px"type="button" onclick="yellow()">yellow</button>
+<button style="background: green;margin:10px"type="button" onclick="green()">green</button>
+<button style="background: black;color: white;margin:10px"type="button" onclick="black()">black</button>
+<button style="background: silver;margin:10px" type="button" onclick="silver()">silver</button>
+<span onclick="Click1()">CLICK ME!</span>
 </div>
+
+
+
 <div id="wb_Text3" style="position:absolute;left:198px;top:885px;width:772px;height:50px;z-index:9;text-align:left;">
 <span style="color:#FFFFFF;font-family:'Courier New';font-size:48px;">CSC 443, Assg 2, Fall 2015</span></div>
 <div id="Layer3" style="position:absolute;text-align:left;left:0px;top:184px;width:190px;height:700px;z-index:10;">
